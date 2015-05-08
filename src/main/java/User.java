@@ -5,15 +5,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class User {
     @JsonProperty("Number")
     private long id;
-
-    //@JsonProperty(УnameФ) Ч эта говорит, что данный атрибут в JSON будет именоватьс€ как name
     @JsonProperty("First Name")
     private String name;
-
     @JsonProperty("Phone Number")
     private String phone;
 
-    //@JsonIgnore Ч а эта аннотаци€ игнорирует данный атрибут и в результате конвертировани€ он не будет добавлен в JSON.
     @JsonIgnore
     private String level;
 
